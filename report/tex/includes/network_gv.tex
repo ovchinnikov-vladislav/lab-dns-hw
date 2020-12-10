@@ -1,0 +1,200 @@
+\documentclass{article}
+\usepackage[x11names, rgb]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{snakes,arrows,shapes}
+\usepackage{amsmath}
+%
+%
+
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{0pt}%
+
+%
+
+\begin{document}
+\pagestyle{empty}
+%
+%
+%
+
+\enlargethispage{100cm}
+% Start of code
+% \begin{tikzpicture}[anchor=mid,>=latex',line join=bevel,]
+\begin{tikzpicture}[>=latex',line join=bevel,]
+  \pgfsetlinewidth{1bp}
+%%
+\pgfsetcolor{black}
+  % Edge: mail2 -- wan
+  \pgfsetcolor{gray}
+  \draw [] (91.325bp,-7.3797bp) .. controls (80.658bp,-0.18211bp) and (65.577bp,9.9949bp)  .. (53.469bp,18.165bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (105.4bp,14.393bp) node {eth0: 2.3.2.6};
+  % Edge: dnsz1 -- wan
+  \pgfsetcolor{gray}
+  \draw [] (79.916bp,81.604bp) .. controls (71.041bp,72.102bp) and (58.201bp,58.356bp)  .. (48.25bp,47.702bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (97.083bp,73.653bp) node {eth0: 2.2.1.7};
+  % Edge: dns2 -- wan
+  \pgfsetcolor{gray}
+  \draw [] (93.437bp,37.705bp) .. controls (84.134bp,36.782bp) and (73.357bp,35.713bp)  .. (63.521bp,34.738bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (78.479bp,27.221bp) node {eth0: 2.1.2.7};
+  % Edge: mail1 -- lan1
+  \pgfsetcolor{gray}
+  \draw [] (-145.25bp,-85.038bp) .. controls (-138.13bp,-85.418bp) and (-130.27bp,-85.837bp)  .. (-122.75bp,-86.238bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (-151.75bp,-94.638bp) node {eth0: 10.0.0.2};
+  % Edge: dns3 -- wan
+  \pgfsetcolor{gray}
+  \draw [] (52.395bp,-29.542bp) .. controls (48.504bp,-17.022bp) and (42.962bp,0.80482bp)  .. (38.858bp,14.006bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (12.627bp,1.2323bp) node {eth0: 2.1.2.8};
+  % Edge: pc1 -- lan1
+  \pgfsetcolor{gray}
+  \draw [] (-89.255bp,-150.31bp) .. controls (-89.345bp,-137.12bp) and (-89.466bp,-119.39bp)  .. (-89.556bp,-106.22bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (-127.41bp,-119.26bp) node {eth0: 10.0.0.10};
+  % Edge: r1 -- lan1
+  \pgfsetcolor{gray}
+  \draw [] (-40.348bp,-42.99bp) .. controls (-49.423bp,-51.271bp) and (-62.256bp,-62.979bp)  .. (-72.558bp,-72.379bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (-91.953bp,-48.685bp) node {eth0: 10.0.0.1};
+  % Edge: dns1 -- wan
+  \pgfsetcolor{gray}
+  \draw [] (-22.98bp,46.445bp) .. controls (-14.375bp,44.199bp) and (-4.1045bp,41.518bp)  .. (5.2958bp,39.065bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (24.158bp,51.755bp) node {eth0: 2.1.1.6};
+  % Edge: dnsz2 -- wan
+  \pgfsetcolor{gray}
+  \draw [] (-9.6556bp,89.067bp) .. controls (-1.2057bp,77.802bp) and (11.467bp,60.909bp)  .. (20.868bp,48.376bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (-27.394bp,77.722bp) node {eth0: 2.2.2.8};
+  % Edge: r1 -- wan
+  \pgfsetcolor{gray}
+  \draw [] (-18.073bp,-21.361bp) .. controls (-8.0389bp,-10.998bp) and (6.9757bp,4.51bp)  .. (18.193bp,16.095bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (33.06bp,-11.633bp) node {eth1: 2.3.1.5};
+  % Edge: dnsr -- wan
+  \pgfsetcolor{gray}
+  \draw [] (35.828bp,99.032bp) .. controls (35.297bp,84.66bp) and (34.55bp,64.416bp)  .. (34.014bp,49.893bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (51.421bp,65.463bp) node {eth0: 2.0.2.2};
+  % Node: mail2
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,1.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (104.76bp,-16.443bp) node {mail2};
+\end{scope}
+  % Node: wan
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.65,0.16,0.16};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (33.345bp,31.745bp) node {2.0.0.0/8};
+\end{scope}
+  % Node: mail1
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,1.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (-170.33bp,-83.701bp) node {mail1};
+\end{scope}
+  % Node: r1
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,1.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (-28.919bp,-32.563bp) node {r1};
+\end{scope}
+  % Node: dns3
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,1.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (57.086bp,-44.631bp) node {dns3};
+\end{scope}
+  % Node: dnsr
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,1.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (36.476bp,116.62bp) node {dnsr};
+\end{scope}
+  % Node: dns1
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,1.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (-42.515bp,51.543bp) node {dns1};
+\end{scope}
+  % Node: pc1
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,1.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (-89.13bp,-168.59bp) node {pc1};
+\end{scope}
+  % Node: lan1
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.65,0.16,0.16};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (-89.681bp,-88.001bp) node {10.0.0.0/8};
+\end{scope}
+  % Node: dns2
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,1.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (117.26bp,40.068bp) node {dns2};
+\end{scope}
+  % Node: dnsz2
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,1.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (-18.726bp,101.16bp) node {dnsz2};
+\end{scope}
+  % Node: dnsz1
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,1.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (90.377bp,92.803bp) node {dnsz1};
+\end{scope}
+%
+\end{tikzpicture}
+% End of code
+
+%
+\end{document}
+%
+
+
+
